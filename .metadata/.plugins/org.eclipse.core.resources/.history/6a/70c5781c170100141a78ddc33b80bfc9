@@ -1,0 +1,25 @@
+import java.awt.*;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class FirstAppGUI {
+	
+	private class FirstDisplay extends JPanel {
+		public void paintComponent (Graphics g){
+			super.paintComponent(g);
+			
+			g.drawString ("Deadly fatala ERROR!",20,35);
+		}
+		
+		private class ButtonHandler implements ActionListener {
+			
+			@Override
+			public void actionPerformed(ActionEvent ev){
+				System.exit(0);
+			}
+			
+		}
+	}
+
+}
