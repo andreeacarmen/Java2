@@ -1,0 +1,30 @@
+import java.util.*;
+import java.*;
+
+
+public class Test {
+
+	static ArrayList <Integer> a = new ArrayList <Integer>();
+	
+	
+	public static void main(String[] args) {
+		Reader rd=nextInputStreamReader("file_name");
+		
+		
+		Iterator <Integer> it;
+		
+		Random r = new Random();
+		for (int i=0; i<5;i++){
+			int x=r.nextInt(100);
+			a.add(x);
+		}
+		it = a.iterator();
+		while(it.hasNext()){
+			Integer item=it.next();
+			System.out.println(item);
+		}
+		
+
+	}
+
+}
